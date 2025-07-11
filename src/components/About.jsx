@@ -77,7 +77,7 @@ const About = () => {
           <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
-          <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto px-4 sm:px-0">
+          <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg max-w-3xl mx-auto px-4 sm:px-0">
             A passionate BCA student and designer crafting digital experiences that blend creativity with technology
           </p>
         </motion.div>
@@ -94,17 +94,17 @@ const About = () => {
             <div className="glass rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
               <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 text-gradient">My Journey</h3>
               <div className="space-y-3 sm:space-y-4 text-sm sm:text-base">
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Currently pursuing Bachelor in Computer Application at Mangalayatan University, 
                   I'm passionate about creating stunning digital experiences that combine aesthetic 
                   appeal with functional design.
                 </p>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   My expertise spans across motion graphics, UI/UX design, web development, 
                   and data analytics. I believe in the power of good design to solve complex 
                   problems and create meaningful user experiences.
                 </p>
-                <p className="text-gray-300 leading-relaxed">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   When I'm not designing or coding, you'll find me exploring new technologies 
                   and staying updated with the latest design trends.
                 </p>
@@ -119,9 +119,9 @@ const About = () => {
                   <Award className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6" />
                 </div>
                 <div className="min-w-0">
-                  <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-white">Bachelor in Computer Application</h4>
+                  <h4 className="text-base sm:text-lg lg:text-xl font-semibold text-gray-800 dark:text-white">Bachelor in Computer Application</h4>
                   <p className="text-neon-cyan text-sm sm:text-base">Mangalayatan University</p>
-                  <p className="text-gray-400 text-sm">2022 - Present</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">2022 - Present</p>
                 </div>
               </div>
             </div>
@@ -150,11 +150,11 @@ const About = () => {
                         <div className={`p-1.5 sm:p-2 bg-gradient-to-r ${skill.color} rounded-lg text-white`}>
                           {skill.icon}
                         </div>
-                        <span className="text-white font-medium text-sm sm:text-base">{skill.name}</span>
+                        <span className="text-gray-800 dark:text-white font-medium text-sm sm:text-base">{skill.name}</span>
                       </div>
                       <span className="text-neon-cyan font-semibold text-sm sm:text-base">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-gray-700 rounded-full h-1.5 sm:h-2">
+                    <div className="w-full bg-gray-300 dark:bg-gray-700 rounded-full h-1.5 sm:h-2">
                       <motion.div
                         className={`h-1.5 sm:h-2 bg-gradient-to-r ${skill.color} rounded-full`}
                         initial={{ width: 0 }}

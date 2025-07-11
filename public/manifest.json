@@ -1,0 +1,27 @@
+{
+  "name": "Shivam Kumar - Portfolio",
+  "short_name": "Shivam Portfolio",
+  "description": "Professional motion graphics and UI/UX designer portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "maskable any"
+    }
+  ],
+  "categories": ["design", "portfolio", "business"],
+  "lang": "en",
+  "dir": "ltr"
+} 

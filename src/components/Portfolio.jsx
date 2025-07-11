@@ -104,7 +104,7 @@ const Portfolio = () => {
           <h2 className="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4">
             Featured <span className="text-gradient">Projects</span>
           </h2>
-          <p className="text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto px-4 sm:px-0">
+          <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto px-4 sm:px-0">
             Explore my latest work in motion graphics, UI/UX design, and web development
           </p>
         </motion.div>
@@ -146,17 +146,17 @@ const Portfolio = () => {
                   </span>
                   <motion.div
                     whileHover={{ rotate: 45 }}
-                    className="text-gray-400 group-hover:text-neon-cyan transition-colors"
+                    className="text-gray-500 dark:text-gray-400 group-hover:text-neon-cyan transition-colors"
                   >
                     <ExternalLink size={16} className="sm:w-5 sm:h-5" />
                   </motion.div>
                 </div>
                 
-                <h3 className="text-lg sm:text-xl font-bold mb-2 text-white group-hover:text-gradient transition-colors line-clamp-2">
+                <h3 className="text-lg sm:text-xl font-bold mb-2 text-gray-800 dark:text-white group-hover:text-gradient transition-colors line-clamp-2">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-400 mb-3 sm:mb-4 line-clamp-2 text-sm sm:text-base">
+                <p className="text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 line-clamp-2 text-sm sm:text-base">
                   {project.description}
                 </p>
                 
@@ -164,13 +164,13 @@ const Portfolio = () => {
                   {project.technologies.slice(0, 3).map((tech) => (
                     <span
                       key={tech}
-                      className="px-2 sm:px-3 py-1 bg-white/10 rounded-full text-xs text-gray-300"
+                      className="px-2 sm:px-3 py-1 bg-gray-200 dark:bg-white/10 rounded-full text-xs text-gray-700 dark:text-gray-300"
                     >
                       {tech}
                     </span>
                   ))}
                   {project.technologies.length > 3 && (
-                    <span className="px-2 sm:px-3 py-1 bg-white/10 rounded-full text-xs text-gray-300">
+                    <span className="px-2 sm:px-3 py-1 bg-gray-200 dark:bg-white/10 rounded-full text-xs text-gray-700 dark:text-gray-300">
                       +{project.technologies.length - 3}
                     </span>
                   )}
@@ -187,7 +187,7 @@ const Portfolio = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4"
+              className="fixed inset-0 bg-black/60 dark:bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4"
               onClick={() => setSelectedProject(null)}
             >
               <motion.div
@@ -195,7 +195,7 @@ const Portfolio = () => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.8, opacity: 0 }}
                 transition={{ duration: 0.3 }}
-                className="glass rounded-xl sm:rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
+                className="bg-white dark:bg-gray-900 rounded-xl sm:rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
                 onClick={(e) => e.stopPropagation()}
               >
                 <div className="relative">
@@ -206,7 +206,7 @@ const Portfolio = () => {
                   />
                   <button
                     onClick={() => setSelectedProject(null)}
-                    className="absolute top-3 sm:top-4 right-3 sm:right-4 p-2 bg-black/50 rounded-full text-white hover:bg-black/70 transition-colors"
+                    className="absolute top-3 sm:top-4 right-3 sm:right-4 p-2 bg-gray-800/80 dark:bg-black/50 rounded-full text-white hover:bg-gray-800 dark:hover:bg-black/70 transition-colors"
                   >
                     <X size={20} className="sm:w-6 sm:h-6" />
                   </button>
@@ -226,17 +226,17 @@ const Portfolio = () => {
                     {selectedProject.title}
                   </h3>
                   
-                  <p className="text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg leading-relaxed">
+                  <p className="text-gray-700 dark:text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg leading-relaxed">
                     {selectedProject.description}
                   </p>
                   
                   <div className="mb-4 sm:mb-6">
-                    <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-white">Technologies Used</h4>
+                    <h4 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-gray-800 dark:text-white">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2 sm:gap-3">
                       {selectedProject.technologies.map((tech) => (
                         <span
                           key={tech}
-                          className="px-3 sm:px-4 py-1.5 sm:py-2 bg-white/10 rounded-full text-xs sm:text-sm text-gray-300 border border-white/20"
+                          className="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-200 dark:bg-white/10 rounded-full text-xs sm:text-sm text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-white/20"
                         >
                           {tech}
                         </span>

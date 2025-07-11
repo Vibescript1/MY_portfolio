@@ -66,7 +66,7 @@ const Hero = () => {
         {/* Main Content */}
         <motion.div variants={itemVariants} className="mb-6 sm:mb-8">
           <motion.h1 
-            className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-2 sm:mb-4 leading-tight"
+            className="text-4xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-2 sm:mb-4 leading-tight"
             whileHover={{ scale: 1.02 }}
           >
             <span className="text-gradient block">Shivam</span>
