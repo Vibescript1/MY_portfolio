@@ -69,8 +69,8 @@ const Hero = () => {
             className="text-4xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-2 sm:mb-4 leading-tight"
             whileHover={{ scale: 1.02 }}
           >
-            <span className="text-gradient block">Shivam</span>
-            <span className="text-white block">Kumar</span>
+            <span className="text-gradient block">ram</span>
+            <span className="text-white block">koun bnega </span>
           </motion.h1>
         </motion.div>
 
@@ -82,7 +82,7 @@ const Hero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
             >
-              Motion Graphics & UI/UX Designer
+              Motion Graphics &
             </motion.h2>
             <motion.p 
               className="text-gray-300 text-xs xs:text-sm sm:text-base lg:text-lg max-w-2xl mx-auto leading-relaxed px-2 sm:px-0"
